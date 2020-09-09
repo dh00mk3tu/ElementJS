@@ -66,9 +66,8 @@ button:active {
 }
 
 canvas {
-    margin: auto;
-    border: 1px solid #000;
-    background-color: #E8EEF1;
-    width: 800px;
-    height: 450px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
