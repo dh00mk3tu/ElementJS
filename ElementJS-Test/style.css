@@ -53,21 +53,16 @@ button:active {
     width: 45%;
 }
 
-.component-title {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #fff;
-    font-size: 25px;
-}
-
-.component-toggle {
+.hostCanvas {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 canvas {
+    margin-top: 15em;
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    background-color: #d8eafa;
+    width: 800px;
+    height: 450px;
 }
