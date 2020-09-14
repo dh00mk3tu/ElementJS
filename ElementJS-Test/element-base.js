@@ -18,7 +18,7 @@ window.onload = function() {
 
     // Trigonometry Trials 
     context.translate(0, height/2);
-    context.scale(1, -1);
+    context.scale(1, - 1);
     for(var angle = 0; angle < Math.PI*2; angle += 0.01){
         console.log(Math.sin(angle));
         var x = angle * 305,
