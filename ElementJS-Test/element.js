@@ -7,7 +7,7 @@ window.onload = function() {
 
 	var points = [],
 		bounce = 1,
-		gravity = 0.7,
+		gravity = 1;
 		friction = 1;
 
 	points.push({
