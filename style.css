@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1E3D58;
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    background-color:#43B0F1;
+    padding: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin: .5em .2em .4em .2em;
+    transition: transform .2s ease-in;
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: #b3d6f5;
+    background: #1471af;
+}
+
+button:active {
+    transform: scale(0.9);
+    color: #ffffff;
+    background: #14283a;
+}
+.header {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 35px;
+    margin: 2em auto;
+    align-content: center;
+}
+
+.header hr {
+    color: #ececec;
+    margin: auto;
+    width: 45%;
+}
+
+.component-title {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+
+.component-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+canvas {
+    margin: auto;
+    border: 1px solid #000;
+    background-color: #E8EEF1;
+    width: 800px;
+    height: 450px;
+}
