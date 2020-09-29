@@ -4,32 +4,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="element.js"></script>
+    <!-- <script src="element.js"></script> -->
+    <script src="element-base.js"></script>
     <title>ElementJS</title>
 </head>
-<body onload="initElement()">
+<body>
     <div class="container">
-
         <div class="header">
             <p>
-                This is the Active Development Branch of ElementJS 
-                <hr> 
+                This is the Active Test Branch of ElementJS 
+                <hr>
             </p>
         </div>
-        <div class="component">
-            <div class="component-title" id="component-title">
-                Choose an Option!
-            </div>
-        </div>
-        <div class="component-toggle">
-            <div class="toggle-buttons">
-                <button onclick="initElement()">Gravity</button>
-            </div>
-            <div class="toggle-buttons">
-                <button>Position</button>
-            </div>
-        </div>
     </div>
-    
+    <div class="hostCanvas">
+        <canvas id="canvas">
+        </canvas>
+    </div>
+
 </body>
 </html>
