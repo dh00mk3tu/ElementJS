@@ -95,6 +95,6 @@ window.onload = function() {
 		context.stroke();
 
 		context.restore();
-
+		contextAnimationFrame(render);
 	}
 };
