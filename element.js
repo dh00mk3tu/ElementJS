@@ -7,13 +7,13 @@ window.onload = function() {
 		arrowY = height / 2,
 		dx, dy,
 		angle = 0,
-		a = 0;
+		a = 5;
 
 	render();
 
 	function render() {
-		arrowX = width / 2 + Math.cos(a) * height * .4;
-		arrowY = height / 2 + Math.sin(a) * height * .4;
+		//arrowX = width / 2 + Math.cos(a) * height * .4;
+		//arrowY = height / 2 + Math.sin(a) * height * .4;
 		//a += .01;
 		context.clearRect(0, 0, width, height);
 
