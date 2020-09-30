@@ -33,6 +33,7 @@ window.onload = function() {
 	//update();
 
 	function update() {
+		console.log("Update Called")
 		updatePoints();
 		renderPoints();
 		requestAnimationFrame(update);
