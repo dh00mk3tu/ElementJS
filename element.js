@@ -30,8 +30,8 @@ window.onload = function() {
 
 
 
-	//update();
-
+	update();
+	renderArrow();
 	function update() {
 		console.log("Update Called")
 		updatePoints();
