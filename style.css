@@ -84,7 +84,7 @@ canvas {
 
 @media (max-width:450px) {
     canvas {
-        height: 65vh;
+        height: 60vh;
         width: 70vw;
     }
 }
