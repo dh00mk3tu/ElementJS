@@ -35,7 +35,7 @@ window.onload = function() {
 	//renderArrow();
 	function update() {
 		
-		console.log("Update Called")
+		//console.log("Update Called")
 		updatePoints();
 		renderPoints();
 		requestAnimationFrame(update);
@@ -73,7 +73,7 @@ window.onload = function() {
 	}
 
 	function renderPoints() {
-		console.log("Arrow Called")
+		//console.log("Arrow Called")
 		context.clearRect(2, 2, width, height);
 		for(var i = 0; i < points.length; i++) {
 			var p = points[i];
