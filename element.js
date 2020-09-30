@@ -11,7 +11,10 @@ window.onload = function() {
 		bounce = .8,
 		gravity = 1.5;
 		friction = 1;
-		//document.getElementById("gravity").innerHTML = gravity;
+		console.log("Gravity: ", gravity);
+		console.log("Bounce: ", bounce);
+		console.log("Friction: ", friction);
+
 		
 	points.push({
 		x: 100,
