@@ -24,6 +24,7 @@ window.onload = function() {
 	update();
 
 	function update() {
+		document.getElementById("gravity").innerHTML = gravity;
 		updatePoints();
 		renderPoints();
 		requestAnimationFrame(update);
