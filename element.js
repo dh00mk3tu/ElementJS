@@ -33,9 +33,9 @@ window.onload = function() {
 	update();
 
 	function update() {
-		updatePoints();
-		renderPoints();
-		//renderArrow();
+		//updatePoints();
+		//renderPoints();
+		renderArrow();
 		requestAnimationFrame(update);
 	}
 
@@ -81,10 +81,15 @@ window.onload = function() {
 	}
 
 	function renderArrow() {
-		context.clearRect(0, 0,width, height);
+		arrowX = width / 2 + Math.cos(a) * height * .4;
+		arrowY = height / 2 + Math.sin(a) * height * .4;
+		//a += .01;
+		context.clearRect(0, 0, width, height);
+
 		context.save();
-		context.translate(aroX, aroY);
+		context.translate(arrowX, arrowY);
 		context.rotate(angle);
+
 		context.beginPath();
 		context.moveTo(20, 0);
 		context.lineTo(-20, 0);
@@ -95,12 +100,12 @@ window.onload = function() {
 		context.stroke();
 
 		context.restore();
-		contextAnimationFrame(render);
+		requestAnimationFrame(render);
 	}
 
-	document.addEventListener("mousemove", function(event){
-		dx = event.clientX -aroX;
-		dy = event.clientY -aroY;
-		angle = Math.atan(dy/dx);
+	document.body.addEventListener("mousemove", function(event) {
+		dx = event.clientX - arrowX;
+		dy = event.clientY - arrowY;
+		angle = Math.atan2(dy, dx);
 	});
 };
