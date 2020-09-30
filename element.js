@@ -30,12 +30,11 @@ window.onload = function() {
 
 
 
-	update();
+	//update();
 
 	function update() {
-		//updatePoints();
-		//renderPoints();
-		renderArrow();
+		updatePoints();
+		renderPoints();
 		requestAnimationFrame(update);
 	}
 
