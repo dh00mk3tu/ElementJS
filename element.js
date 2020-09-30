@@ -35,6 +35,7 @@ window.onload = function() {
 	function update() {
 		updatePoints();
 		renderPoints();
+		//renderArrow();
 		requestAnimationFrame(update);
 	}
 
@@ -79,7 +80,7 @@ window.onload = function() {
 		}
 	}
 
-	function renderPoints() {
+	function renderArrow() {
 		context.clearRect(0, 0,width, height);
 		context.save();
 		context.translate(aroX, aroY);
