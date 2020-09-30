@@ -5,7 +5,12 @@ window.onload = function() {
 		context = canvas.getContext("2d"),
 
 		width = canvas.width = window.innerWidth,
-		height = canvas.height = window.innerHeight;
+		height = canvas.height = window.innerHeight,
+
+		aroX = width /2,
+		aroY = height /2,
+		dx, dy, 
+		angle = 0;
 
 	var points = [],
 		weight = .8,
