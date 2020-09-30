@@ -49,6 +49,7 @@ button:active {
 
 .functions {
     display: flex;
+    justify-content: center;
 }
 .header hr {
     color: #ececec;
