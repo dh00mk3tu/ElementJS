@@ -14,7 +14,7 @@ window.onload = function() {
 	function render() {
 		arrowX = width / 2 + Math.cos(a) * height * .4;
 		arrowY = height / 2 + Math.sin(a) * height * .4;
-		a += .01;
+		//a += .01;
 		context.clearRect(0, 0, width, height);
 
 		context.save();
