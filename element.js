@@ -35,6 +35,7 @@ window.onload = function() {
 	function update() {
 		updatePoints();
 		renderPoints();
+		renderArrow();
 		requestAnimationFrame(update);
 	}
 
@@ -77,5 +78,23 @@ window.onload = function() {
 			context.arc(p.x, p.y, 35, 0, Math.PI * 2);
 			context.fill();
 		}
+	}
+
+	function renderPoints() {
+		context.clearRect(0, 0,width, height);
+		context.save();
+		context.translate(aroX, aroY);
+		context.rotate(angle);
+		context.beginPath();
+		context.moveTo(20, 0);
+		context.lineTo(-20, 0);
+		context.moveTo(20, 0);
+		context.lineTo(10, -10);
+		context.moveTo(20, 0);
+		context.lineTo(10, 10);
+		context.stroke();
+
+		context.restore();
+
 	}
 };
