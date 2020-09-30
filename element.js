@@ -29,7 +29,8 @@ window.onload = function() {
 	});
 
 
-
+	document.getElementById("ball").addEventListener("click", update);
+	document.getElementById("renderArr").addEventListener("click", renderArrow);
 	//update();
 	//renderArrow();
 	function update() {
