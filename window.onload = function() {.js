@@ -31,7 +31,7 @@ window.onload = function() {
 		context.stroke();
 
 		context.restore();
-		requestAnimationFrame(render);
+		requestAnimationFrame(renderArrow);
 	}
 
 	document.body.addEventListener("mousemove", function(event) {
