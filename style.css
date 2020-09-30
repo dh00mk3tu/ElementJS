@@ -47,6 +47,9 @@ button:active {
     align-content: center;
 }
 
+.functions {
+    display: flex;
+}
 .header hr {
     color: #ececec;
     margin: auto;
