@@ -70,6 +70,7 @@ window.onload = function() {
 				p.oldy = p.y + vy * weight;
 			}
 		}
+		
 	}
 
 	function renderPoints() {
