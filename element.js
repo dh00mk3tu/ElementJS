@@ -29,7 +29,7 @@ window.onload = function() {
 	});
 
 
-	document.getElementById("ball").addEventListener("click", update);
+	document.getElementById("ball").addEventListener("click", updatePoints);
 	document.getElementById("renderArr").addEventListener("click", renderArrow);
 	//update();
 	//renderArrow();
@@ -73,8 +73,7 @@ window.onload = function() {
 	}
 
 	function renderPoints() {
-		window.location.reload(false);
-
+		
 		console.log("Arrow Called")
 		context.clearRect(2, 2, width, height);
 		for(var i = 0; i < points.length; i++) {
