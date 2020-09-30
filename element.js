@@ -110,6 +110,6 @@ window.onload = function() {
 	document.body.addEventListener("mousemove", function(event) {
 		dx = event.clientX - arrowX;
 		dy = event.clientY - arrowY;
-		angle = Math.atan(dy/ dx);
+		angle = Math.atan2(dy, dx);
 	});
 };
