@@ -88,6 +88,7 @@ canvas {
 
 @media (max-width:450px) {
     canvas {
+        margin-top: 15em;
         height: 60vh;
         width: 65vw;
     }
