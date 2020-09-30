@@ -63,6 +63,28 @@ canvas {
     display: block;
     position: absolute;
     background-color: #d8eafa;
-    width: 800px;
-    height: 450px;
+    width: 75vw;
+    height: 75vh;
+}
+
+/* Responsive Canvas*/
+@media (min-width:720px) {
+    canvas {
+        height: 70vh;
+        width: 70vw;
+    }
+}
+
+@media (max-width:990px) {
+    canvas {
+        height: 80vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width:450px) {
+    canvas {
+        height: 70vh;
+        width: 80vw;
+    }
 }
