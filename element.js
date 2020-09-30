@@ -97,4 +97,10 @@ window.onload = function() {
 		context.restore();
 		contextAnimationFrame(render);
 	}
+
+	document.addEventListener("mousemove", function(event){
+		dx = event.clientX -aroX;
+		dy = event.clientY -aroY;
+		angle = Math.atan(dy/dx);
+	});
 };
