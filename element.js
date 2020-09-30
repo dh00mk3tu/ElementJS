@@ -7,8 +7,8 @@ window.onload = function() {
 		width = canvas.width = window.innerWidth,
 		height = canvas.height = window.innerHeight,
 
-		aroX = width /2,
-		aroY = height /2,
+		arrowX = width /2,
+		arrowY = height /2,
 		dx, dy, 
 		angle = 0;
 
