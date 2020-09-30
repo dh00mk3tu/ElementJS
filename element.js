@@ -8,11 +8,11 @@ window.onload = function() {
 		height = canvas.height = window.innerHeight;
 
 	var points = [],
-		bounce = .8,
+		weight = .8,
 		gravity = 1.5;
 		friction = 1;
+		console.log("Weight: ", weight);
 		console.log("Gravity: ", gravity);
-		console.log("Bounce: ", bounce);
 		console.log("Friction: ", friction);
 
 		
@@ -47,19 +47,19 @@ window.onload = function() {
 
 			if(p.x > width) {
 				p.x = width;
-				p.oldx = p.x + vx * bounce;
+				p.oldx = p.x + vx * weight;
 			}
 			else if(p.x < 0) {
 				p.x = 0;
-				p.oldx = p.x + vx * bounce;
+				p.oldx = p.x + vx * weight;
 			}
 			if(p.y > height) {
 				p.y = height;
-				p.oldy = p.y + vy * bounce;
+				p.oldy = p.y + vy * weight;
 			}
 			else if(p.y < 0) {
 				p.y = 0;
-				p.oldy = p.y + vy * bounce;
+				p.oldy = p.y + vy * weight;
 			}
 		}
 	}
