@@ -8,7 +8,7 @@ window.onload = function() {
 		height = canvas.height = window.innerHeight;
 
 	var points = [],
-		bounce = 1,
+		bounce = .8,
 		gravity = 1.5;
 		friction = 1;
 		//document.getElementById("gravity").innerHTML = gravity;
