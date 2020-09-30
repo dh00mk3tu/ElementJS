@@ -10,8 +10,9 @@ window.onload = function() {
 	var points = [],
 		bounce = 1,
 		gravity = 1;
-		friction = 1;
-
+		friction = .912;
+		//document.getElementById("gravity").innerHTML = gravity;
+		
 	points.push({
 		x: 100,
 		y: 100,
@@ -24,7 +25,6 @@ window.onload = function() {
 	update();
 
 	function update() {
-		document.getElementById("gravity").innerHTML = gravity;
 		updatePoints();
 		renderPoints();
 		requestAnimationFrame(update);
