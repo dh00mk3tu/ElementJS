@@ -25,6 +25,7 @@ button {
     font-size: 20px;
     margin: .5em .2em .4em .2em;
     transition: transform .2s ease-in;
+    animation: bubble-in;
 }
 
 button:hover {
@@ -55,6 +56,8 @@ button:active {
     color: #ececec;
     margin: auto;
     width: 45%;
+    animation : slide-in2 .7s ease-in-out;
+
 }
 
 .hostCanvas {
@@ -63,13 +66,38 @@ button:active {
 }
 
 canvas {
+    border-radius: 10px;
     margin-top: 13em;
     display: block;
     position: absolute;
     background-color: #d8eafa;
     width: 75vw;
     height: 75vh;
+    animation : slide-in .7s ease-in-out;
 }
+
+@keyframes slide-in {
+    from {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes slide-in2 {
+    from {
+        width: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes bubble-in {
+    from {
+        width: 20px;
+        height: 20px;   
+    }
+}
+
 
 /* Responsive Canvas*/
 @media (min-width:720px) {
