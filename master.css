@@ -1,0 +1,126 @@
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+}
+
+body {
+     cursor: crosshair;
+     font-family: Poppins;
+     background: #000;
+     /* background: url(hero.jpg) no-repeat 50% 50%; */
+}
+
+.content {
+     width: 60%;
+     margin: 0 auto;
+     z-index: -1;
+     position: absolute;
+     top: 60%;
+     left: 10%;
+     transform: translate(0, -50%);
+}
+
+.content h1 {
+     font-family: Poppins;
+     font-size: 54px;
+     color: #101010;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+
+.content p {
+     margin-top: 0;
+     text-align: left;
+     color: #101010;
+     font-weight: 400;
+}
+
+.overlay-2 {
+     z-index: 0;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: #323232;
+}
+
+.overlay {
+     z-index: 1;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: #101010;
+}
+
+.overlay p {
+     font-size: 300px;
+     font-weight: 800;
+}
+
+.screen {
+     color: #323232;
+     font-family: Poppins;
+     position: absolute;
+     top: 45%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.notice {
+     font-family: Poppins;
+     text-align: center;
+     transition: 0.7 ease-in;
+     margin-top: 40%;
+     color: #fff;
+}
+
+.myBtn {
+     font-family: Poppins;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     text-align: center;
+     color: #fff;
+     transform: translate(-50%, -50%);
+}
+
+button {
+     display: block;
+     padding: 24px 48px;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 17px;
+     letter-spacing: 6px;
+     color: #fff;
+     border: 2px solid #fff;
+     text-transform: uppercase;
+     outline: none;
+     overflow: hidden;
+     background: none;
+     z-index: 1;
+     cursor: crosshair;
+     transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+     color: #101010;
+     cursor: crosshair;
+}
+
+.myBtn:before {
+     content: "";
+     position: absolute;
+     background: #fff;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+     top: 0;
+}

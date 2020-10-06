@@ -2,40 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="element-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="element.js"></script> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="Element.js"></script>
     <script src="ElementVector.js"></script>
     <title>ElementJS</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="element-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
+
     <div class="container">
-        <div class="header">
-            <p>
-                This is the Active Master Branch of ElementJS 
-                <hr>
-            </p>
-            <div class="functions">
-                <div class="ball"><button id="ball">Ball</button></div>
-                <div class="arrow"><button id="renderArr">Arrow</button></div>
+
+        <div class="overlay">
+            <p class="screen">ElementJS</p>
+            <div class="intro">
+                    <button class="myBtn" onclick="fadeOut()">Proceed</button>
+            </div>
+            <div class="notice">
+                    ElementJS is a lightweight Physics Engine being developed by Anirudh Rath // dh00mk3tu
+                    <br>
+                    For best experience, use a computer. The interface is not designed for Mobile devices yet.
             </div>
         </div>
-        
+
+        <div class="overlay-2"></div>
+        <div class="container">
+            <div class="header">
+                <p>
+                    This is the Active Master Branch of ElementJS 
+                    <hr>
+                </p>
+                <div class="functions">
+                    <div class="btnToggle"><button id="ball">Ball</button></div>
+                    <div class="btnToggle"><button id="renderArr">Arrow</button></div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="hostCanvas">
+            <canvas id="canvas">
+            </canvas>
+        </div>
     </div>
 
-    <div class="hostCanvas">
-        <canvas id="canvas">
-        </canvas>
-    </div>
-    <div class="underCanvas">
-        <p>
-            Please check the console for more information regarding testing. Not designed for mobile yet
-        </p>
-        <br>
-        <p>
-            ElementJS is a light weight Physics Engine, being developed by Anirudh Rath | dh00mk3tu 
-        </p>
-    </div>
+    <script>
+
+     function fadeOut() {
+
+     TweenMax.to(".myBtn", 1, {
+          y: -100,
+          opacity: 0
+     });
+
+     TweenMax.to(".screen", 2, {
+          y: -400,
+          opacity: 0,
+          ease: Power2.easeInOut,
+          delay: 2
+     });
+
+     TweenMax.from(".overlay", 2, {
+          ease: Power2.easeInOut
+     });
+
+     TweenMax.to(".overlay", 2, {
+          delay: 2.6,
+          top: "-110%",
+          ease: Expo.easeInOut
+     });
+
+     TweenMax.to(".overlay-2", 2, {
+          delay: 3,
+          top: "-110%",
+          ease: Expo.easeInOut
+     });
+     //redirect();
+
+     }
+
+     function redirect() {
+        location.replace("https://anirudhrath.tech/ElementJS/element-index.html")
+     }
+
+    </script>
 </body>
 </html>
