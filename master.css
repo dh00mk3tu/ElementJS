@@ -1,8 +1,8 @@
 html, body {
      margin: 0;
      padding: 0;
-     width: 100%;
-     height: 100%;
+     /* width: 100%;
+     height: 100%; */
 }
 
 body {
@@ -68,6 +68,18 @@ body {
      transform: translate(-50%, -50%);
 }
 
+.screen2 {
+     font-family: Poppins;
+     position: absolute;
+     opacity: 0.7;
+     color: rgb(112, 111, 111);
+     font-size: 260px;
+     top: 44%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+}
+
 .notice {
      font-family: Poppins;
      text-align: center;
@@ -123,4 +135,16 @@ button {
 
 .myBtn:hover:before {
      top: 0;
+}
+
+@media (max-width:990px) {
+     .overlay p {
+          font-size: 160px;
+     }
+}
+
+@media (max-width:450px) {
+     .overlay p {
+          font-size: 85px;
+     }
 }

@@ -149,6 +149,7 @@ canvas {
 /* Responsive Canvas*/
 @media (min-width:720px) {
     canvas {
+        margin-top: 17em;
         height: 70vh;
         width: 70vw;
     }
@@ -158,6 +159,9 @@ canvas {
     canvas {
         height: 80vh;
         width: 80vw;
+    }
+    .header {
+        margin-top:.5em;
     }
 }
 
