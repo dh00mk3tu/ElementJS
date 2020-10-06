@@ -1,4 +1,4 @@
-console.log("script loaded");
+console.log("ElementJS Loaded - Callback");
 
 window.onload = function() {
 	var canvas = document.getElementById("canvas"),
@@ -12,8 +12,21 @@ window.onload = function() {
 		dx, dy, 
 		angle = 0;
 
+	// Vector Object
+	var elementVector = vector.create(10, 5);
+	// console.log(elementVector.getX());
+	// console.log(elementVector.getX());
+	// console.log(elementVector.getAngle());
+	// console.log(elementVector.getLenth());
+
+	elementVector.setAngle(Math.PI / 6);
+	elementVector.setLength(100);
+	console.log(elementVector.getX());
+	console.log(elementVector.getY());
+	
+
 	var points = [],
-		weight = .8,
+		weight = .8;
 		gravity = 1.6;
 		friction = 1;
 		forceIncrement = 0.1;

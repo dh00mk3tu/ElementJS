@@ -12,6 +12,7 @@ body {
     justify-items: center;
     justify-content: center;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 button {
@@ -63,6 +64,41 @@ button:active {
 .hostCanvas {
     display: flex;
     justify-content: center;
+}
+
+.underCanvas {
+    display: none;
+    /* position: absolute; */
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 1em 0 0 0;
+    animation: SlideOut 8s ease-in-out;
+}
+
+@keyframes SlideOut {
+    0% {
+        font-size: 35px;
+        opacity: 0;
+        margin: 15em 0 25em 0;
+    }
+    25% {
+        opacity: 1;
+        margin: 15em 0 25em 0;
+    }
+    50% {
+        margin: 15em 0 25em 0;
+    }
+    75% {
+        margin: 15em 0 25em 0;
+        font-size: 35px;
+    }
+    to {
+        margin: 1em 0 0 0;
+        font-size: 15px;
+    }
 }
 
 canvas {
