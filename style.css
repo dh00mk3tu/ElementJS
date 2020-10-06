@@ -25,10 +25,11 @@ button {
     font-size: 20px;
     margin: .5em .2em .4em .2em;
     transition: transform .2s ease-in;
+    animation: bubble-in;
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.11);
     color: #b3d6f5;
     background: #1471af;
 }
@@ -47,10 +48,16 @@ button:active {
     align-content: center;
 }
 
+.functions {
+    display: flex;
+    justify-content: center;
+}
 .header hr {
     color: #ececec;
     margin: auto;
     width: 45%;
+    animation : slide-in2 .7s ease-in-out;
+
 }
 
 .hostCanvas {
@@ -59,10 +66,58 @@ button:active {
 }
 
 canvas {
-    margin-top: 12em;
+    border-radius: 10px;
+    margin-top: 13em;
     display: block;
     position: absolute;
     background-color: #d8eafa;
-    width: 800px;
-    height: 450px;
+    width: 75vw;
+    height: 75vh;
+    animation : slide-in .7s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes slide-in2 {
+    from {
+        width: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes bubble-in {
+    from {
+        width: 20px;
+        height: 20px;   
+    }
+}
+
+
+/* Responsive Canvas*/
+@media (min-width:720px) {
+    canvas {
+        height: 70vh;
+        width: 70vw;
+    }
+}
+
+@media (max-width:990px) {
+    canvas {
+        height: 80vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width:450px) {
+    canvas {
+        margin-top: 15em;
+        height: 60vh;
+        width: 65vw;
+    }
 }
