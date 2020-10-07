@@ -48,7 +48,7 @@ window.onload = function() {
 			
 			}	
 			requestAnimationFrame(update);
-			nParticles = 0;
+			//nParticles = 0;
 		}
 	};
 
