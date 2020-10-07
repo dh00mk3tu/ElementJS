@@ -38,7 +38,7 @@ window.onload = function() {
 			nParticles = 0;
 			pv = 0;
 			pd = 0;
-			update();
+			requestAnimationFrame(update);
 		}
 
  
