@@ -16,14 +16,16 @@ window.onload = function() {
 		function generate() {
 			console.log("inside generate function");
 			var nParticles = document.getElementById("nParticles").value;
+			console.log("nParticles", nParticles);
+			for(var i=0; i < nParticles; i += 1) {
+				// particle.create(x, y, speed, direction)
+					particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
+			}
 			update();
 			// alert(input);
 		}
 
-	for(var i=0; i < nParticles; i += 1) {
-		// particle.create(x, y, speed, direction)
-			particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
-	} 
+ 
 
 		
 		//update();
