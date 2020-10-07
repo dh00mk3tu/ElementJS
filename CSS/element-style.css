@@ -201,6 +201,9 @@ canvas {
         align-items: center;
         flex-direction: column;
     }
+    .functions button {
+        margin-top:.2em;
+    }
     input {
         width: 100px;
     }
