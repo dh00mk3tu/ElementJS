@@ -60,7 +60,7 @@ button:active {
 }
 
 .header p {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .functions {
@@ -189,7 +189,7 @@ canvas {
         height: 50vh;
         width: 55vw;
     }
-    header p {
-        font-size: 2px;
+    .header p {
+        font-size: 15px;
     }
 }
