@@ -14,6 +14,7 @@ window.onload = function() {
 	document.getElementById("generate").addEventListener("click", generate);
 
 		function generate() {
+			console.log("inside generate function");
 			var nParticles = document.getElementById("nParticles").value;
 			update();
 			// alert(input);
