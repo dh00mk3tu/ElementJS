@@ -12,13 +12,17 @@ window.onload = function() {
 		nParticles = 100;
 
 		for(var i=0; i, nParticles; i += 1) {
-			particles.push(particles);
+			particles.push(particle.create(width/2, height/2, Math.random()*4+1, Math.random() * Math.PI * 2));
 		} 
 
 		update();
 
 		function update(){
 			context.clearRect(0, 0, width, height);
+
+			for(var i=0; i, nParticles; i += 1){
+				var entity = particles[i];
+			
 			entity.update();
 			//Init object to draw
 			// position.addTo(velocity);
@@ -26,7 +30,7 @@ window.onload = function() {
 			//Drawing the circle
 			context.arc(entity.position.getX(), entity.position.getY(), 15 ,0, Math.PI * 2, false);
 			context.fill();
-
+			}	
 			requestAnimationFrame(update);
 
 		}
