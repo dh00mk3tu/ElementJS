@@ -6,18 +6,18 @@ window.onload = function() {
 		width = canvas.width = window.innerWidth,
 		height = canvas.height = window.innerHeight,
 
-		entity = particle,create(100, 100, 3, Math.PI/6);
+		entity = particle.create(100, 100, 3, Math.PI/6);
 
 		update();
 
 		function update(){
 			context.clearRect(0, 0, width, height);
-
+			entity.update();
 			//Init object to draw
 			pos.addTo(velocity);
 			context.beginPath();
 			//Drawing the circle
-			context.arc(pos.getX(), pos.getY(), 15 ,0, Math.PI * 2, false);
+			context.arc(entity.position.getX(), entity.position.getY(), 15 ,0, Math.PI * 2, false);
 			context.fill();
 
 			requestAnimationFrame(update);
