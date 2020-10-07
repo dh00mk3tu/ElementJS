@@ -195,6 +195,7 @@ canvas {
         width: 55vw;
     }
     .functions {
+        align-items: center;
         flex-direction: column;
     }
     .header p {
@@ -203,4 +204,5 @@ canvas {
     .title {
         font-size:10px;
     }
+
 }
