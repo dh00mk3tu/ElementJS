@@ -6,7 +6,14 @@ window.onload = function() {
 		width = canvas.width = window.innerWidth,
 		height = canvas.height = window.innerHeight,
 
-		entity = particle.create(100, 100, 3, Math.PI/3);
+		// entity = particle.create(100, 100, 3, Math.PI/3);
+
+		particles = [];
+		nParticles = 100;
+
+		for(var i=0; i, nParticles; i += 1) {
+			particles.push(particles);
+		} 
 
 		update();
 
