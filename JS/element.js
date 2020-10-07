@@ -10,8 +10,8 @@ window.onload = function() {
 
 		particles = [];
 		nParticles = 0;
-		velocity = 10;
-		direction = 1;
+		//velocity = 10;
+		//direction = 1;
 
 	document.getElementById("generate").addEventListener("click", generate);
 	document.getElementById("reset").addEventListener("click", reset);
@@ -33,7 +33,12 @@ window.onload = function() {
 		}
 
 		function reset() {
-
+			context.clearRect(0, 0, width, height);
+			n = 0;
+			nParticles = 0;
+			pv = 0;
+			pd = 0;
+			update();
 		}
 
  
