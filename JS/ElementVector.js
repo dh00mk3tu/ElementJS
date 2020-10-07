@@ -66,12 +66,12 @@ var vector = {
         this.x -= v2.getX();
         this._y -= v2.getY();
     },
-    multiplyBy: function(v2) {
+    multiplyBy: function(val) {
         this.x *= val;
         this._y *= val;
     },
-    divideBy: function(v2) {
-        this.x /= v2.getX();
-        this._y /= v2.getY();
+    divideBy: function(val) {
+        this.x /= val;
+        this._y /= val;
     }
 };
