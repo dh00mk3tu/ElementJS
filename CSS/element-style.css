@@ -190,12 +190,17 @@ canvas {
 
 @media (max-width:450px) {
     canvas {
-        margin: 0em;
-        margin-top: 15em;
+        margin-top: 25em;
         height: 50vh;
         width: 55vw;
     }
+    .functions {
+        flex-direction: column;
+    }
     .header p {
         font-size: 15px;
+    }
+    .title {
+        font-size:10px;
     }
 }
