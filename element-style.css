@@ -51,21 +51,25 @@ button:active {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 100;
     color: #fff;
-    font-size: 35px;
-    margin: 2em;
+    /* font-size: 35px; */
+    margin: 2em 0 0 0 ;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.header p {
+    font-size: 35px;
+}
+
 .functions {
-    margin: .5em;
+    margin: .5em 0 0 0;
     display: flex;
     justify-content: center;
 }
 
 .btnToggle {
-    margin: 0 .5em .5em .5em;
+    margin: 0 0 0 0;
     transition: all 0.3s ease-in-out;
     color: #000;
 }
@@ -167,8 +171,9 @@ canvas {
 
 @media (max-width:450px) {
     canvas {
+        margin: 0em;
         margin-top: 15em;
-        height: 60vh;
-        width: 65vw;
+        height: 50vh;
+        width: 55vw;
     }
 }

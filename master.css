@@ -175,7 +175,7 @@ button {
      }
 }
 
-@media (max-width:990px) {
+@media (max-width:770px) {
      .overlay p {
           font-size: 140px;
      }
