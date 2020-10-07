@@ -19,7 +19,7 @@ window.onload = function() {
 			console.log("nParticles", nParticles);
 			for(var i=0; i < nParticles; i += 1) {
 				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(Math.random(100), Math.random(100), Math.random()*2+1, Math.random() * Math.PI * 2));
+					particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 			}
 			update(nParticles);
 			// alert(input);
