@@ -10,8 +10,6 @@ window.onload = function() {
 
 		particles = [];
 		nParticles = 0;
-		x = 100;
-		y = 100;
 		velocity = 10;
 		direction = 1;
 
@@ -20,8 +18,6 @@ window.onload = function() {
 		function generate() {
 			//console.log("inside generate function");
 			var n = document.getElementById("nParticles").value;
-			var px = document.getElementById("x").value;
-			var py = document.getElementById("y").value;
 			var pv = document.getElementById("velocity").value;
 			var pd = document.getElementById("direction").value;
 
