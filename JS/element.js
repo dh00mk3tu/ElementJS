@@ -14,7 +14,7 @@ window.onload = function() {
 			context.clearRect(0, 0, width, height);
 			entity.update();
 			//Init object to draw
-			pos.addTo(velocity);
+			// position.addTo(velocity);
 			context.beginPath();
 			//Drawing the circle
 			context.arc(entity.position.getX(), entity.position.getY(), 15 ,0, Math.PI * 2, false);
