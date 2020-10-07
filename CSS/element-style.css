@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+
 body {
     /* display: flex;
     flex-direction: column-reverse;
@@ -117,7 +118,7 @@ button:active {
 }
 
 canvas {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin-top: 15em;
     display: block;
     position: absolute;
@@ -125,6 +126,7 @@ canvas {
     width: 75vw;
     height: 75vh;
     animation : slide-in .7s ease-in-out;
+    padding: 1px;
 }
 
 @keyframes slide-in {

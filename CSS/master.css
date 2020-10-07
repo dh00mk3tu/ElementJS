@@ -48,6 +48,8 @@ body {
 
 .overlay {
      z-index: 1;
+     overflow: hidden;
+
      position: absolute;
      width: 100%;
      height: 100vh;
@@ -55,8 +57,7 @@ body {
 }
 
 .overlay p {
-     overflow: hidden;
-     font-size: 160px;
+     font-size: 370px;
      font-weight: 800;
 }
 
@@ -113,7 +114,7 @@ body {
 .notice {
      font-family: Poppins;
      text-align: center;
-     transition: 0.7 ease-in;
+     /* transition: 0.7 ease-in; */
      margin-top: 40%;
      font-size: 20px;
      color: rgb(184, 184, 184);
