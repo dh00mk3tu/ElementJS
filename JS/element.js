@@ -16,6 +16,9 @@ window.onload = function() {
 			particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 		} 
 
+	document.getElementById("explode").addEventListener("click", update);
+
+
 		update();
 
 		function update(){
