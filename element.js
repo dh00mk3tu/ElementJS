@@ -58,7 +58,7 @@ window.onload = function() {
 	function updatePoints() {
 		for(var i = 0; i < points.length; i++) {
 			var p = points[i],
-				vx = ((p.x - p.oldx) * friction) * forceIncrement,
+				vx = ((p.x - p.oldx) * friction) + forceIncrement,
 				vy = ((p.y - p.oldy) * friction) + forceIncrement;
 
 			p.oldx = p.x;
@@ -66,7 +66,7 @@ window.onload = function() {
 			p.x += vx;
 			p.y += vy;
 			p.y += gravity;
-			forceIncrement = forceIncrement + .01;
+			forceIncrement += .001;
 			if(p.x > width) {
 				p.x = width;
 				p.oldx = p.x + vx * weight;

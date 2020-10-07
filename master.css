@@ -84,6 +84,7 @@ body {
      animation: glitch 2s linear infinite;
 }
 
+
 @keyframes glitch {
      0% {
           top: 45%;
