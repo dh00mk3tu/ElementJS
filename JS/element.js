@@ -9,14 +9,14 @@ window.onload = function() {
 		// entity = particle.create(100, 100, 3, Math.PI/3);
 
 		particles = [];
-		nParticles = 100;
+		nParticles = 2;
 
 
 	document.getElementById("explode").addEventListener("click", update);
-		for(var i=0; i, i < nParticles; i += 1) {
-			// particle.create(x, y, speed, direction)
+	for(var i=0; i, i < nParticles; i += 1) {
+		// particle.create(x, y, speed, direction)
 			particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
-		} 
+	} 
 
 		
 		//update();
@@ -36,6 +36,7 @@ window.onload = function() {
 			context.fill();
 			}	
 			requestAnimationFrame(update);
+			context.clearRect(0, 0, width, height);
 
 		}
 	};
