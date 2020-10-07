@@ -31,6 +31,7 @@ window.onload = function() {
 		//update();
 
 		function update(){
+			console.log("inside update function");
 			context.clearRect(0, 0, width, height);
 
 			for(var i=0; i<nParticles; i += 1){
