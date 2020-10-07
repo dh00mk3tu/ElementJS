@@ -25,7 +25,7 @@ window.onload = function() {
 			nParticles =  n;
 			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(width/2, height/2,pv, Math.PI*2*pd));
+					particles.push(particle.create(width/2, height/2,pv, Math.PI*2*Math.random()));
 			}
 			update();
 			// alert(input);
