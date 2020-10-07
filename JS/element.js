@@ -10,6 +10,10 @@ window.onload = function() {
 
 		particles = [];
 		nParticles = 0;
+		x = 10;
+		y = 10;
+		speed = 0;
+		direction = Math.PI*2;
 
 	document.getElementById("generate").addEventListener("click", generate);
 
