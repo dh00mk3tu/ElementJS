@@ -68,13 +68,14 @@ button:active {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 0;
 }
 
-.btnToggle {
+/* .btnToggle {
     margin: 0 0 0 0;
     transition: all 0.3s ease-in-out;
     color: #000;
-}
+} */
 
 .btnToggle:hover{
     background-color: rgb(102, 102, 102);
