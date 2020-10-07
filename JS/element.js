@@ -40,7 +40,7 @@ window.onload = function() {
 			pv = 0;
 			pd = 0;
 			console.log("particle on reset", nParticles);
-			requestAnimationFrame(update);
+			requestAnimationFrame(reset);
 		}
 
  
