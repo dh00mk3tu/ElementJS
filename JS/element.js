@@ -11,8 +11,9 @@ window.onload = function() {
 		particles = [];
 		nParticles = 100;
 
-		for(var i=0; i, nParticles; i += 1) {
-			particles.push(particle.create(width/2, height/2, Math.random()*4+1, Math.random() * Math.PI * 2));
+		for(var i=0; i, i < nParticles; i += 1) {
+			// particle.create(x, y, speed, direction)
+			particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 		} 
 
 		update();
@@ -20,7 +21,7 @@ window.onload = function() {
 		function update(){
 			context.clearRect(0, 0, width, height);
 
-			for(var i=0; i, nParticles; i += 1){
+			for(var i=0; i<nParticles; i += 1){
 				var entity = particles[i];
 			
 			entity.update();
