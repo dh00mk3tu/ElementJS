@@ -190,7 +190,7 @@ canvas {
 
 @media (max-width:450px) {
     canvas {
-        margin-top: 25em;
+        margin-top: 22em;
         height: 50vh;
         width: 55vw;
     }
@@ -198,11 +198,14 @@ canvas {
         align-items: center;
         flex-direction: column;
     }
+    input {
+        width: 100px;
+    }
     .header p {
         font-size: 15px;
     }
     .title {
-        font-size:10px;
+        font-size:15px;
     }
 
 }
