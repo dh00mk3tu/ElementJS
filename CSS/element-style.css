@@ -189,4 +189,7 @@ canvas {
         height: 50vh;
         width: 55vw;
     }
+    header p {
+        font-size: 2px;
+    }
 }
