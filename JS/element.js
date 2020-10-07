@@ -12,7 +12,7 @@ window.onload = function() {
 		nParticles = 0;
 		x = 100;
 		y = 100;
-		speed = 10;
+		velocity = 10;
 		direction = 1;
 
 	document.getElementById("generate").addEventListener("click", generate);
@@ -20,11 +20,16 @@ window.onload = function() {
 		function generate() {
 			//console.log("inside generate function");
 			var n = document.getElementById("nParticles").value;
+			x = document.getElementById("x").value;
+			y = document.getElementById("y").value;
+			velocity = document.getElementById("velocity").value;
+			direction = document.getElementById("direction").value;
+
 			console.log("nParticles", nParticles);
 			nParticles =  n;
 			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(x, y,speed, direction));
+					particles.push(particle.create(x, y,velocity, Math.PI*direction));
 			}
 			update();
 			// alert(input);
