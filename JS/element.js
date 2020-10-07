@@ -9,7 +9,7 @@ window.onload = function() {
 		// entity = particle.create(100, 100, 3, Math.PI/3);
 
 		particles = [];
-		nParticles = 3;
+		nParticles = 0;
 
 	document.getElementById("generate").addEventListener("click", generate);
 
@@ -17,7 +17,8 @@ window.onload = function() {
 			//console.log("inside generate function");
 			var n = document.getElementById("nParticles").value;
 			console.log("nParticles", nParticles);
-			for(var i=0; i < nParticles; i += 1) {
+			nParticles =  n;
+			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
 					particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 			}
@@ -30,11 +31,11 @@ window.onload = function() {
 		
 		//update();
 
-		function update(particleNum) {
+		function update() {
 			console.log("inside update function");
 			context.clearRect(0, 0, width, height);
 
-			for(var i=0; i<particleNum; i += 1){
+			for(var i=0; i<nParticles; i += 1){
 				var entity = particles[i];
 			
 			entity.update();
