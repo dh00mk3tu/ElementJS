@@ -11,6 +11,7 @@ window.onload = function() {
 		particles = [];
 		// nParticles = 3;
 
+	document.getElementById("generate").addEventListener("click", generate);
 
 		function generate() {
 			var nParticles = document.getElementById("nParticles").value;
