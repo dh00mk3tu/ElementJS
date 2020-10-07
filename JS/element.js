@@ -10,10 +10,10 @@ window.onload = function() {
 
 		particles = [];
 		nParticles = 0;
-		x = 10;
-		y = 10;
-		speed = 0;
-		direction = Math.PI*2;
+		x = 100;
+		y = 100;
+		speed = 10;
+		direction = 1;
 
 	document.getElementById("generate").addEventListener("click", generate);
 
@@ -24,7 +24,7 @@ window.onload = function() {
 			nParticles =  n;
 			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
+					particles.push(particle.create(x, y,speed, direction));
 			}
 			update();
 			// alert(input);
