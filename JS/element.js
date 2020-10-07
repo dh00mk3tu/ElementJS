@@ -39,6 +39,7 @@ window.onload = function() {
 			nParticles = 0;
 			pv = 0;
 			pd = 0;
+			entity.position = vector.create(0, 0);
 			console.log("particle on reset", nParticles);
 			// requestAnimationFrame(reset);
 		}
