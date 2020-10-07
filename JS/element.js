@@ -22,8 +22,9 @@ window.onload = function() {
 			var pv = document.getElementById("velocity").value;
 			var pd = document.getElementById("direction").value;
 
-			console.log("nParticles", nParticles);
+			
 			nParticles =  n;
+			console.log("nParticles", nParticles);
 			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
 					particles.push(particle.create(width/2, height/2,Math.random()*pv, Math.PI*pd*Math.random()));
@@ -38,6 +39,7 @@ window.onload = function() {
 			nParticles = 0;
 			pv = 0;
 			pd = 0;
+			console.log("particle on reset", nParticles);
 			requestAnimationFrame(update);
 		}
 
