@@ -194,6 +194,9 @@ canvas {
         height: 50vh;
         width: 55vw;
     }
+    .notice {
+        font-size:12px;
+    }
     .functions {
         align-items: center;
         flex-direction: column;
