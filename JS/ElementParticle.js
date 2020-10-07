@@ -5,6 +5,7 @@ var particle = {
     velocity: null,
 
     create: function (x,y, speed, direction) {
+        console.log(direction);
         var entity = Object.create(this);
         entity.position = vector.create(x, y);
         entity.velocity = vector.create(0,0);

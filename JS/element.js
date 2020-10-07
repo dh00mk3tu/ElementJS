@@ -6,7 +6,7 @@ window.onload = function() {
 		width = canvas.width = window.innerWidth,
 		height = canvas.height = window.innerHeight,
 
-		entity = particle.create(100, 100, 3, Math.PI/6);
+		entity = particle.create(100, 100, 3, Math.PI/2);
 
 		update();
 
