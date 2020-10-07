@@ -204,8 +204,8 @@ canvas {
     .header p {
         font-size: 15px;
     }
-    .title {
-        font-size:15px;
+    .title p{
+        font-size:25px;
     }
 
 }
