@@ -20,16 +20,16 @@ window.onload = function() {
 		function generate() {
 			//console.log("inside generate function");
 			var n = document.getElementById("nParticles").value;
-			x = document.getElementById("x").value;
-			y = document.getElementById("y").value;
-			velocity = document.getElementById("velocity").value;
-			direction = document.getElementById("direction").value;
+			var px = document.getElementById("x").value;
+			var py = document.getElementById("y").value;
+			var pv = document.getElementById("velocity").value;
+			var pd = document.getElementById("direction").value;
 
 			console.log("nParticles", nParticles);
 			nParticles =  n;
 			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(x, y,velocity, Math.PI*direction));
+					particles.push(particle.create(width/2, height/2,pv, pd));
 			}
 			update();
 			// alert(input);
