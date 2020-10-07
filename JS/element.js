@@ -14,14 +14,14 @@ window.onload = function() {
 	document.getElementById("generate").addEventListener("click", generate);
 
 		function generate() {
-			console.log("inside generate function");
+			//console.log("inside generate function");
 			var nParticles = document.getElementById("nParticles").value;
 			console.log("nParticles", nParticles);
 			for(var i=0; i < nParticles; i += 1) {
 				// particle.create(x, y, speed, direction)
 					particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 			}
-			update();
+			update(nParticles);
 			// alert(input);
 		}
 
@@ -30,11 +30,11 @@ window.onload = function() {
 		
 		//update();
 
-		function update(){
+		function update(particleNum) {
 			console.log("inside update function");
 			context.clearRect(0, 0, width, height);
 
-			for(var i=0; i<nParticles; i += 1){
+			for(var i=0; i<particleNum; i += 1){
 				var entity = particles[i];
 			
 			entity.update();
