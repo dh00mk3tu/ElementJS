@@ -117,6 +117,14 @@ button:active {
     }
 }
 
+input {
+    border: 1px solid #fff;
+    border-radius:2px;
+    margin: 5px;
+    font-family: Poppins;
+    
+}
+
 canvas {
     /* border-radius: 10px; */
     margin-top: 15em;
