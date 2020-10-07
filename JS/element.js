@@ -7,11 +7,11 @@ window.onload = function() {
 		height = canvas.height = window.innerHeight,
 
 		pos = vector.create(200, 200);
-		velocity = vector.create(0,0);
+		velocity = vector.create(20,100);
 
 
 		velocity.setLength(5);
-		velocity.setAngle(Math.PI / 6);
+		velocity.setAngle(Math.PI / 2);
 
 
 		update();
