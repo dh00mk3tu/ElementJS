@@ -19,7 +19,7 @@ window.onload = function() {
 	document.getElementById("explode").addEventListener("click", update);
 
 
-		update();
+		//update();
 
 		function update(){
 			context.clearRect(0, 0, width, height);
