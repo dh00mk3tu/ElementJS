@@ -14,6 +14,7 @@ window.onload = function() {
 		direction = 1;
 
 	document.getElementById("generate").addEventListener("click", generate);
+	document.getElementById("reset").addEventListener("click", reset);
 
 		function generate() {
 			//console.log("inside generate function");
@@ -25,10 +26,14 @@ window.onload = function() {
 			nParticles =  n;
 			for(var i=0; i < n; i += 1) {
 				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(width/2, height/2,Math.random()*pv, Math.PI*2*Math.random()));
+					particles.push(particle.create(width/2, height/2,Math.random()*pv, Math.PI*pd*Math.random()));
 			}
 			update();
 			// alert(input);
+		}
+
+		function reset() {
+
 		}
 
  
