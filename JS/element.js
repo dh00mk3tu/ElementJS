@@ -9,11 +9,11 @@ window.onload = function() {
 		// entity = particle.create(100, 100, 3, Math.PI/3);
 
 		particles = [];
-		nParticles = 200;
+		nParticles = 3;
 
 
-	document.getElementById("explode").addEventListener("click", update);
-	for(var i=0; i, i < nParticles; i += 1) {
+	document.getElementById("generate").addEventListener("click", update);
+	for(var i=0; i < nParticles; i += 1) {
 		// particle.create(x, y, speed, direction)
 			particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 	} 
@@ -34,9 +34,9 @@ window.onload = function() {
 			//Drawing the circle
 			context.arc(entity.position.getX(), entity.position.getY(), 15 ,0, Math.PI * 2, false);
 			context.fill();
+			
 			}	
 			requestAnimationFrame(update);
-			context.clearRect(0, 0, width, height);
 
 		}
 	};
