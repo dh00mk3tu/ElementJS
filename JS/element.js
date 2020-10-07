@@ -11,14 +11,14 @@ window.onload = function() {
 		particles = [];
 		nParticles = 100;
 
+
+	document.getElementById("explode").addEventListener("click", update);
 		for(var i=0; i, i < nParticles; i += 1) {
 			// particle.create(x, y, speed, direction)
 			particles.push(particle.create(width/2, height/2, Math.random()*2+1, Math.random() * Math.PI * 2));
 		} 
 
-	document.getElementById("explode").addEventListener("click", update);
-
-
+		
 		//update();
 
 		function update(){
