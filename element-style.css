@@ -117,7 +117,7 @@ canvas {
     margin-top: 15em;
     display: block;
     position: absolute;
-    background-color: #d8eafa;
+    background-color: #ffffff;
     width: 75vw;
     height: 75vh;
     animation : slide-in .7s ease-in-out;
