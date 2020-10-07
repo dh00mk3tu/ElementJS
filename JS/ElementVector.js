@@ -44,6 +44,8 @@ var vector = {
         return Math.sqrt(this._x*this._x + this._y*this._y);
     },
 
+    
+
     add: function(v2){
         return vector.create(this._x + v2.getX(), this._y + v2.getY());
     },
@@ -53,7 +55,7 @@ var vector = {
     multiply: function(val){
         return vector.create(this._x * val, this-_y * val);
     },
-    divide: function(v2){
+    divide: function(val){
         return vector.create(this._x / val, this-_y / val);
     },
 
