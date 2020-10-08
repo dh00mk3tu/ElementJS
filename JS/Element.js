@@ -1,74 +1,149 @@
-console.log("ElementJS Loaded - Callback");
-
 window.onload = function() {
 	var canvas = document.getElementById("canvas"),
 		context = canvas.getContext("2d"),
 		width = canvas.width = window.innerWidth,
 		height = canvas.height = window.innerHeight,
+		ship = particle.create(width / 2, height / 2, 0, 0),
+		thrust = vector.create(0, 0),
+		angle = 0,
+		turningLeft = false,
+		turningRight = false,
+		thrusting = false;
 
-		// entity = particle.create(100, 100, 3, Math.PI/3);
+	update();
 
-		particles = [];
-		nParticles = 0;
-		//velocity = 10;
-		//direction = 1;
 
-	document.getElementById("generate").addEventListener("click", generate);
-	document.getElementById("reset").addEventListener("click", reset);
+	document.body.addEventListener("keydown", function(event) {
+		// console.log(event.keyCode);
+		switch(event.keyCode) {
+			case 38: // up
+				thrusting = true;
+				break;
+				
+			case 37: // left
+				turningLeft = true;
+				break;
+				
+			case 39: // right
+				turningRight = true;
+				break;
 
-		function generate() {
-			//console.log("inside generate function");
-			var n = document.getElementById("nParticles").value;
-			var pv = document.getElementById("velocity").value;
-			var pd = document.getElementById("direction").value;
+			default:
+				break;
+				
+		}
+	});
 
-			
-			nParticles =  n;
-			console.log("nParticles", nParticles);
-			for(var i=0; i < n; i += 1) {
-				// particle.create(x, y, speed, direction)
-					particles.push(particle.create(width/2, height/2,Math.random()*pv, Math.PI*pd*Math.random()));
-			}
-			update();
-			// alert(input);
+	document.body.addEventListener("keyup", function(event) {
+		// console.log(event.keyCode);
+		switch(event.keyCode) {
+			case 38: // up
+				thrusting = false;
+				break;
+				
+			case 37: // left
+				turningLeft = false;
+				break;
+				
+			case 39: // right
+				turningRight = false;
+				break;
+
+			default:
+				break;
+				
+		}
+	});
+
+	function update() {
+		context.clearRect(0, 0, width, height);
+
+		if(turningLeft) {
+			angle -= 0.05;
+		}
+		if(turningRight) {
+			angle += 0.05;
 		}
 
-		function reset() {
-			context.clearRect(0, 0, width, height);
-			n = 0;
-			nParticles = 0;
-			pv = 0;
-			pd = 0;
-			entity.position = vector.create(0, 0);
-			console.log("particle on reset", nParticles);
-			// requestAnimationFrame(reset);
+		thrust.setAngle(angle);
+
+		if(thrusting) {
+			thrust.setLength(0.1);
+		}
+		else {
+			thrust.setLength(0);
 		}
 
- 
+		// animation goes here
+		ship.accelerate(thrust);
+		ship.update();
 
-		
-		//update();
+		context.save();
+		context.translate(ship.position.getX(), ship.position.getY());
+		context.rotate(angle);
 
-		function update() {
-			console.log("inside update function");
-			context.clearRect(0, 0, width, height);
-
-			for(var i=0; i<nParticles; i += 1){
-				var entity = particles[i];
-			
-			entity.update();
-			//Init object to draw
-			// position.addTo(velocity);
-			context.beginPath();
-			//Drawing the circle
-			context.arc(entity.position.getX(), entity.position.getY(), 15 ,0, Math.PI * 2, false);
-			context.fill();
-			
-			}	
-			requestAnimationFrame(update);
-			//nParticles = 0;
+		context.beginPath();
+		context.moveTo(20, 0);
+		context.lineTo(-20, -14);
+		context.lineTo(-20, 14);
+		context.lineTo(20, 0);
+		if(thrusting) {
+			context.moveTo(-20, 0);
+			context.lineTo(-32, 0);
 		}
-	};
+		context.stroke();
+
+		context.restore(); 	
+
+		if(ship.position.getX() > width) {
+			ship.position.setX(0);
+		}
+		if(ship.position.getX() < 0) {
+			ship.position.setX(width);
+		}
+		if(ship.position.getY() > height) {
+			ship.position.setY(0);
+		}
+		if(ship.position.getY() < 0) {
+			ship.position.setY(height);
+		}
+	
+		requestAnimationFrame(update);
+	}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
