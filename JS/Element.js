@@ -110,7 +110,125 @@ window.onload = function() {
 	
 		requestAnimationFrame(update);
 	}
-};
+};	
+
+
+
+
+
+
+
+
+
+// console.log("ElementJS Loaded - Callback");
+
+// window.onload = function() {
+// 	var canvas = document.getElementById("canvas"),
+// 		context = canvas.getContext("2d"),
+// 		width = canvas.width = window.innerWidth,
+// 		height = canvas.height = window.innerHeight,
+		
+// 		ship = particle.create(width/2, height/2, 0, 0),
+// 		thurst = vector.create(0,0),
+
+// 		particles = [];
+// 		nParticles = 0;
+// 		accel = vector.create(0.1, 0.1);
+		
+
+
+// 	// document.getElementById("generate").addEventListener("click", generate);
+// 	// document.getElementById("reset").addEventListener("click", reset);
+
+// 	// 	function generate() {
+// 	// 		//console.log("inside generate function");
+// 	// 		var n = document.getElementById("nParticles").value;
+// 	// 		var pv = document.getElementById("velocity").value;
+// 	// 		var pd = document.getElementById("direction").value;
+
+			
+// 	// 		nParticles =  n;
+// 	// 		console.log("nParticles", nParticles);
+// 	// 		for(var i=0; i < n; i += 1) {
+// 	// 			console.log("gravity",pg);
+// 	// 			// particle.create(x, y, speed, direction, gravity)
+// 	// 				particles.push(particle.create(width/2, height/2,pv*Math.random(), Math.PI*pd*Math.random(), 0.3));
+// 	// 		}
+// 	// 		update();
+// 	// 		// alert(input);
+// 	// 	}
+
+// 	// 	function reset() {
+// 	// 		context.clearRect(0, 0, width, height);
+
+// 	// 		n = 0;
+// 	// 		nParticles = 0;
+// 	// 		pv = 0;
+// 	// 		pd = 0;
+// 	// 		entity.position = vector.create(0, 0);
+// 	// 		console.log("particle on reset", nParticles);
+// 	// 		// requestAnimationFrame(reset);
+// 	// 	}
+// 	update();
+// 	document.addEventListener("keydown",function(event){
+// 		switch(event.keycode) {
+// 			case 38: thurst.setY(-0.1); //go up
+// 			console.log("up rel");
+// 				break;
+// 			case 40: thurst.setY(0.1); //down
+// 				break;
+// 			case 37: thurst.setX(-0.1); //left
+// 				break;
+// 			case 39: thurst.setX(0.1); // right
+// 				break;
+// 			default:
+// 				break;
+// 		}
+// 	});
+// 	document.addEventListener("keyup",function(event){
+// 		switch(event.keycode) {
+// 			case 38: thurst.setY(0); //go up
+// 				console.log("up rel");
+// 				break;
+// 			case 40: thurst.setY(0); //down
+// 				break;
+// 			case 37: thurst.setX(0); //left
+// 				break;
+// 			case 39: thurst.setX(0); // right
+// 				break;
+// 			default:
+// 				break;
+// 		}
+// 	});
+ 
+
+		
+		
+
+
+// 		function update() {
+// 			console.log("inside update function");
+// 			context.clearRect(0, 0, width, height);
+			
+
+// 			ship.accelerate(thurst);
+// 			ship.update();
+			
+// 			context.beginPath();
+// 			context.arc(ship.position.getX(), ship.position.getY(), 10, 0, Math.PI*2, false);
+// 			context.fill();
+// 			// for(var i=0; i<nParticles; i += 1){
+// 			// 	var entity = particles[i];
+// 			// 	entity.update();
+// 			// 	context.beginPath();
+// 			// 	context.arc(entity.position.getX(), entity.position.getY(), 4 ,0, Math.PI * 2, false);
+// 			// 	context.fill();
+// 			// }	
+// 			requestAnimationFrame(update);
+// 		}
+// 	};
+
+
 
 
 
