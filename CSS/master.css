@@ -247,6 +247,7 @@ button {
      .overlay p {
           font-size: 140px;
      }
+
 }
 
 @media (max-width:450px) {
@@ -257,5 +258,8 @@ button {
 @media (max-width:380px) {
      .overlay p {
           font-size: 70px;
+     }
+     .container > .header p {
+          font-size: 25px;
      }
 }
