@@ -260,9 +260,10 @@ button {
           font-size: 70px;
      }
      .container > .header p {
+          padding: 1em 1em 0 1em;
           font-size: 25px;
      }
-     .container > .header > .title p {
+     .container > .header > .title {
           font-size: 20px;
      }
 }
