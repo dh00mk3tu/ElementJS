@@ -170,6 +170,10 @@ button {
      top: 0;
 }
 
+.js-tilt-glare {
+     border-radius: 5px;
+}
+
 .contentHost {
      display: flex;
      justify-content: center;
@@ -191,6 +195,8 @@ button {
 }
 
 .contentList > ul > li {
+     transform-style: preserve-3d;
+     perspective: 100px;
      padding: 1em;
      width: 8em;
      border-radius: 5px;
