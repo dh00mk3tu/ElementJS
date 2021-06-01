@@ -111,7 +111,14 @@
     </script>
     
     <script src="/JS/tilt.jquery.js"></script>
-    <script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.contentHost').tilt({
+                glare: true,
+                maxGlare: .5
+            })
+        })
+
         $('.contentHost').tilt({
             glare: true,
             maxGlare: .5
