@@ -111,6 +111,9 @@ body {
      }
 }
 
+.header {
+     font-family: Poppins;
+}
 .notice {
      font-family: Poppins;
      text-align: center;
