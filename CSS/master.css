@@ -110,7 +110,10 @@ body {
           left: 50.1%;
      }
 }
-
+.container > .header {
+     font-family: Poppins;
+     font-size: 50px;
+}
 .title {
      /* font-weight: ; */
      font-family: Poppins;
