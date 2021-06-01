@@ -112,14 +112,16 @@ body {
           left: 50.1%;
      }
 }
-.container > .header {
+.container > .header p{
      /* font-family: Poppins; */
      font-family: 'Raleway', sans-serif;
-     font-size: 50px;
+     font-size: 70px;
 }
 .title {
      /* font-weight: ; */
-     font-family: Poppins;
+     /* font-family: Poppins; */
+     font-family: 'Raleway', sans-serif;
+     /* font-size: 70px; */
 }
 .notice {
      font-family: Poppins;
