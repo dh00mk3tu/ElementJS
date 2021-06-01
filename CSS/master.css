@@ -262,4 +262,7 @@ button {
      .container > .header p {
           font-size: 25px;
      }
+     .container > .header > .title p {
+          font-size: 20px;
+     }
 }
