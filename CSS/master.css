@@ -115,14 +115,11 @@ body {
 .container > .header p{
      /* font-family: Poppins; */
      font-family: 'Raleway', sans-serif;
-     font-size: 70px;
+     font-size: 40px;
 }
-.title {
-     /* font-weight: ; */
-     /* font-family: Poppins; */
+/* .title {
      font-family: 'Raleway', sans-serif;
-     /* font-size: 70px; */
-}
+} */
 .notice {
      font-family: Poppins;
      text-align: center;
