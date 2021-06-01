@@ -170,6 +170,55 @@ button {
      top: 0;
 }
 
+.contentHost {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1.5em;
+     position: relative;
+     top: 15em;
+     border-radius: 15px;
+     height: auto;
+     width: 15em;
+     background: rgb(43, 43, 43);
+}
+
+.contentList > ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.contentList > ul > li {
+     padding: 1em;
+     width: 8em;
+     border-radius: 5px;
+     margin: 1em 0;
+     filter : drop-shadow(2px 4px 8px #1a1a1a);
+     /* height: 10%; */
+     background:rgb(53, 53, 53);
+     transition: 0.1s ease-in-out;
+}
+.contentList > ul > li:hover {
+     filter : drop-shadow(4px 6px 10px #0a0a0a);
+
+}
+
+.contentList > ul > li:active {
+     filter : drop-shadow(0px 2px 6px #000000);
+}
+
+.contentList {
+     font-size: 20px;
+     color: #fff;
+}
+
+.contentHost > .contentList ul{
+     list-style: none;
+}
+
+
 @media (max-width:1280px) {
      .overlay p {
           font-size: 260px;
