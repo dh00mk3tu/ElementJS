@@ -62,19 +62,21 @@
     border-radius: 15px;
     height: auto;
     width: 15em;
-    background: rgb(43, 43, 43);
+    /* background: rgb(43, 43, 43); */
 }
 
 .TestList {
-    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 a {
     text-decoration: none;
     color: #fff;
 }
 .ActiveTestHost > .TestList ul li {
-    /* list-style: none;
-         
+    list-style: none;  
     cursor: pointer;
     transform-style: preserve-3d;
     perspective: 100px;
@@ -83,9 +85,9 @@ a {
     border-radius: 5px;
     margin: 1em 0;
     filter : drop-shadow(2px 4px 8px #1a1a1a);
-    /* height: 10%; */
+
     background:rgb(53, 53, 53);
-    transition: 0.1s ease-in-out; */
+    transition: 0.1s ease-in-out;
 }
 
 
