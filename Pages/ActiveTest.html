@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Page-Style/page-style.css">
-    <link rel="stylesheet" href="../CSS/master.css">
+    <!-- <link rel="stylesheet" href="../CSS/master.css"> -->
     <title>Active Tests - ElementJS</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
             </div>
         </div>
     </div>
-    <div class="contentHost" >
-        <div class="contentList">
+    <div class="ActiveTestHost">
+        <div class="TestList">
             <ul>
                 <li class="tile" data-tilt><p><a href="Pages/ActiveTest.html">Active Tests</a></p></li>
                 <li class="tile" data-tilt><p><a href="README.md">Blog</a></p></li>
@@ -25,5 +25,18 @@
             </ul>
         </div>
     </div>
+
+    <script src="../JS/tilt.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.tile').tilt({
+                glare: true,
+                maxGlare: .2,
+                maxTilt: 25,
+                perspective: 400,
+                scale: 1.1,
+            })
+        })
+    </script>
 </body>
 </html>
