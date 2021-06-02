@@ -204,9 +204,11 @@ button {
      align-items: center;
 }
 
-.contentList > ul > li {
+.contentLIist > ul > li a{
      text-decoration: none;
-     link-style: none;
+}
+.contentList > ul > li {
+     
      cursor: pointer;
      transform-style: preserve-3d;
      perspective: 100px;
