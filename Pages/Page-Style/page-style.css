@@ -56,12 +56,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background:rgb(37, 37, 37);
-    /* width: 40%; */
-    border-radius: 5px;
 }
 
 .TestList {
+    
+    background:rgb(51, 51, 51);
+    width: 100px;
+    border-radius: 5px;
 
 }
 a {
