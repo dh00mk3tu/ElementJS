@@ -204,7 +204,7 @@ button {
      align-items: center;
 }
 
-.contentLIist > ul > li a{
+a{
      text-decoration: none;
      color: #fff;
 }
