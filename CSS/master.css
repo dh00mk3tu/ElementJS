@@ -205,6 +205,8 @@ button {
 }
 
 .contentList > ul > li {
+     text-decoration: none;
+     link-style: none;
      cursor: pointer;
      transform-style: preserve-3d;
      perspective: 100px;
