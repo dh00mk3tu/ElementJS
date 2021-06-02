@@ -9,7 +9,16 @@
 
 .container {
     font-family: 'Raleway';
-    color: #fff;    
+    color: #fff;
+    font-size: 35px;    
+}
+
+.header {
+    position: relative;
+    top: 1em;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 
