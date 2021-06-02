@@ -53,7 +53,7 @@
 
 
 .ActiveTestHost {
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.5em;
@@ -62,7 +62,7 @@
     border-radius: 15px;
     height: auto;
     width: 15em;
-    background: rgb(43, 43, 43); */
+    background: rgb(43, 43, 43);
 }
 
 .TestList {
