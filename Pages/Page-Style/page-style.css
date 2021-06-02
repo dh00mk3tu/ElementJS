@@ -4,7 +4,7 @@
 *  {
     margin: 0;
     padding: 0;
-    /* background: #343434; */
+    background: #343434;
 }
 
 .container {
@@ -73,7 +73,7 @@ a {
     color: #fff;
 }
 .ActiveTestHost > .TestList ul li {
-    list-style: none;
+    /* list-style: none;
          
     cursor: pointer;
     transform-style: preserve-3d;
@@ -85,7 +85,7 @@ a {
     filter : drop-shadow(2px 4px 8px #1a1a1a);
     /* height: 10%; */
     background:rgb(53, 53, 53);
-    transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out; */
 }
 
 
