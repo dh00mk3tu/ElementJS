@@ -23,6 +23,7 @@
 }
 
 .ListContainer {
+    top: 2em;
     position: relative;
     display: flex;
     justify-content: center;
