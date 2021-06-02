@@ -28,6 +28,7 @@
     align-items: center;
 }
 .ActiveTestHost {
+
     padding: 1.5em;
     position: relative;
     top: 5em;
@@ -38,7 +39,9 @@
 }
 
 .TestList {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 a {
     text-decoration: none;
