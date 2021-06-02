@@ -15,64 +15,10 @@
 }
 
 .header {
-    position: relative;
+    position: absolute;
     top: 1em;
     display: flex;
     align-items:center;
     justify-content: center;
 }
-
-.ListContainer {
-    top: 3em;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.ActiveTestHost {
-
-    padding: 1.5em;
-    position: relative;
-    top: 5em;
-    border-radius: 15px;
-    height: auto;
-    width: 15em;
-    background: rgb(43, 43, 43);
-}
-
-.TestList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-a {
-    text-decoration: none;
-    color: #fff;
-}
-.ActiveTestHost > .TestList ul li {
-    list-style: none;  
-    cursor: pointer;
-    text-align: center;
-    transform-style: preserve-3d;
-    perspective: 100px;
-    padding: 1em;
-    width: 8em;
-    border-radius: 5px;
-    margin: 1em 0;
-    filter : drop-shadow(2px 4px 8px #1a1a1a);
-    background:rgb(53, 53, 53);
-    transition: 0.1s ease-in-out;
-}
-
-.TestList > ul > li:hover {
-    background:rgb(77, 77, 77);
-    filter : drop-shadow(4px 6px 10px #0a0a0a);
-
-}
-
-.TestList > ul > li:active {
-    background:rgb(36, 36, 36);
-    filter : drop-shadow(0px 2px 6px #000000);
-}
-
 
