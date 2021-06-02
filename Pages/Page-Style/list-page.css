@@ -24,13 +24,15 @@
 .ListContainer {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ActiveTestHost {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.5em;
-    position: absolute;
+    position: relative;
     top: 5em;
     border-radius: 15px;
     height: auto;
