@@ -11,6 +11,7 @@
     font-family: 'Raleway';
     color: #fff;
     font-size: 35px;    
+    position: relative;
 }
 
 .header {
