@@ -51,6 +51,11 @@
     height: auto;
 }
 
+.ListContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .ActiveTestHost {
     display: flex;
