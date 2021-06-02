@@ -56,6 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(255, 255, 255);
 }
 
 .TestList {
