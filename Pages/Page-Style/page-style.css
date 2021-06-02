@@ -58,12 +58,13 @@
     justify-content: center;
     background: rgb(255, 255, 255);
     height:auto;
+    width: 15em;
 }
 
 .TestList {
     
     background:#fff;
-    width: 100px;
+    /* width: 100px; */
     border-radius: 5px;
 
 }
