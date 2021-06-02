@@ -28,9 +28,6 @@
     align-items: center;
 }
 .ActiveTestHost {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1.5em;
     position: relative;
     top: 5em;
