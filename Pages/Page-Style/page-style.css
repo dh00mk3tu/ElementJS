@@ -75,6 +75,7 @@ a {
 .ActiveTestHost > .TestList ul li {
     list-style: none;  
     cursor: pointer;
+    text-align: center;
     transform-style: preserve-3d;
     perspective: 100px;
     padding: 1em;
