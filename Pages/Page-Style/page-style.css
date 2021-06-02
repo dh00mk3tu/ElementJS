@@ -54,19 +54,19 @@
 
 .ActiveTestHost {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: rgb(255, 255, 255);
-    height:auto;
+    align-items: center;
+    padding: 1.5em;
+    position: relative;
+    top: 15em;
+    border-radius: 15px;
+    height: auto;
     width: 15em;
+    background: rgb(43, 43, 43);
 }
 
 .TestList {
     
-    background:#fff;
-    /* width: 100px; */
-    border-radius: 5px;
-
 }
 a {
     text-decoration: none;
@@ -74,6 +74,18 @@ a {
 }
 .ActiveTestHost > .TestList ul li {
     list-style: none;
+         
+    cursor: pointer;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    padding: 1em;
+    width: 8em;
+    border-radius: 5px;
+    margin: 1em 0;
+    filter : drop-shadow(2px 4px 8px #1a1a1a);
+    /* height: 10%; */
+    background:rgb(53, 53, 53);
+    transition: 0.1s ease-in-out;
 }
 
 
