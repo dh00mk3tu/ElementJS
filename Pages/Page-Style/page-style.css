@@ -52,4 +52,18 @@
 }
 
 
+.ActiveTestHost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.ActiveTestHost > .TestList ul li {
+    list-style: none;
+}
+
+
 
