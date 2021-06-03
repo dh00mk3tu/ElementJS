@@ -4,21 +4,82 @@
 * {
     margin: 0;
     padding: 0;
-    background: #343434;
 }
 
+body {
+    background: #343434;
+}
 .container {
     font-family: 'Raleway';
     color: #fff;
     font-size: 35px;    
-    position: relative;
+    /* position: absolute; */
 }
 
 .header {
-    position: absolute;
+    position: relative;
     top: 1em;
     display: flex;
     align-items:center;
     justify-content: center;
+}
+
+.ListContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1.5em; */
+    position: relative;
+    top: 5em;
+    /* border-radius: 15px; */
+    height: auto;
+    width: auto;
+    /* width: 15em; */
+}
+
+.ActiveTestHost {
+    padding: 1em;
+    /* position: absolute; */
+    display: flex;
+    background: rgb(43, 43, 43);
+    width: 20em;
+    height: auto;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.TestList {
+    /* background: #fff; */
+    /* position: relative; */
+    /* width: 0em; */
+    height:auto;
+    font-family: Raleway;
+}
+
+.TestList > ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    /* background:#fff; */
+    height:auto;
+    /* width:10em; */
+}
+
+.TestList > ul > li {
+    width: 100%;
+    height: auto;
+    padding: 0.5em;
+    border-radius: 5px;
+    filter : drop-shadow(2px 4px 8px #1a1a1a);
+    text-align: center;
+    background: #343434;
+    margin: .5em;
 }
 
