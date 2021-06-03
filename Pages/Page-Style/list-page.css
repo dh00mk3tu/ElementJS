@@ -34,12 +34,12 @@ body {
     /* border-radius: 15px; */
     height: auto;
     width: auto;
-    overflow: hidden;
     /* width: 15em; */
 }
 
 .ActiveTestHost {
     padding: 1em;
+    
     /* position: absolute; */
     display: flex;
     background: rgb(43, 43, 43);
@@ -58,11 +58,13 @@ a {
     /* background: #fff; */
     /* position: relative; */
     /* width: 0em; */
+    
     height:auto;
     font-family: Raleway;
 }
 
 .TestList > ul {
+    
     display: flex;
     flex-direction: column;
     list-style: none;
