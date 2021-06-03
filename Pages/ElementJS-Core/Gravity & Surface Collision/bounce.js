@@ -5,7 +5,7 @@ window.onload = function() {
 		height = canvas.height = window.innerHeight,
 		p = particle.create(width / 2, height / 2, 5, Math.random() * Math.PI * 2, 0.1);
 
-	p.radius = 40;
+	p.radius = 30;
 	p.bounce = 1;
 
 	update();
