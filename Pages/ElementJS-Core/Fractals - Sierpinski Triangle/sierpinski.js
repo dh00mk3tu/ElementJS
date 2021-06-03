@@ -11,12 +11,12 @@ window.onload = function() {
 			y: Math.random() * -300,
 		},
 		p1 = {
-			x: 278,
+			x: Math.random() * 278,
 			y: Math.random() * 160,
 
 		},
 		p2 = {
-			x: -278,
+			x: Math.random() * -278,
 			y: Math.random() * 160,
 
 		};
