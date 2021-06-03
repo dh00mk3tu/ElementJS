@@ -8,15 +8,17 @@ window.onload = function() {
 	context.translate(width / 2, height / 2);
 	var p0 = {
 			x: 0,
-			y: -321
+			y: Math.random() * -300,
 		},
 		p1 = {
 			x: 278,
-			y: 160
+			y: Math.random() * 160,
+
 		},
 		p2 = {
 			x: -278,
-			y: 160
+			y: Math.random() * 160,
+
 		};
 
 	sierpinski(p0, p1, p2, 8);
