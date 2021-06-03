@@ -6,7 +6,7 @@ window.onload = function() {
 		p = particle.create(width / 2, height / 2, 5, Math.random() * Math.PI * 2, 0.1);
 
 	p.radius = 40;
-	p.bounce = -0.9;
+	p.bounce = 1;
 
 	update();
 
