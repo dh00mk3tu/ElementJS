@@ -6,7 +6,7 @@ window.onload = function() {
 		sun = particle.create(width / 2, height / 2, 0, 0),
 		planet = particle.create(width / 2 + 200, height / 2, 10, -Math.PI / 2);
 
-	sun.mass = 100000;
+	sun.mass = 20000;
 
 	update();
 
