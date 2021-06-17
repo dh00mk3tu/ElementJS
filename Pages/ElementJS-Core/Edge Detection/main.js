@@ -63,7 +63,7 @@ window.onload = function() {
 		for(var i = 0; i < points.length; i++) {
 			var p = points[i];
 			context.beginPath();
-			context.arc(p.x, p.y, 5, 0, Math.PI * 2);
+			context.arc(p.x, p.y, 15, 0, Math.PI * 2);
 			context.fill();
 		}
 	}

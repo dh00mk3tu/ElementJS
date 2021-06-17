@@ -10,7 +10,7 @@ window.onload = function() {
 		// turningRight = false,
 		// thrusting = false;
 
-		sun = particle.create(width/2, height/2, 0, 0),
+		sun = particle.create(wicleardth/2, height/2, 0, 0),
 		planet = particle.create(width/2 + 200, height/2, 10, -Math.PI/2);
 		planet2 = particle.create(width/2 + 230, height/2, 25, -Math.PI/2);
 	sun.mass = 17000;
@@ -24,7 +24,6 @@ window.onload = function() {
 		planet.update();
 		planet2.gravityTo(sun);
 		planet2.update();
-
 		context.beginPath();
 		context.fillStyle = "Yellow";
 		context.arc(sun.position.getX(), sun.position.getY(), 40, 0, Math.PI*2, false);
@@ -36,14 +35,13 @@ window.onload = function() {
 		context.fill();
 
 		context.beginPath();
-		context.fillStyle = "Blue";
+		context.fillStyle = "Green";
 		context.arc(planet2.position.getX(), planet2.position.getY(), 5, 0, Math.PI*2, false);
 		context.fill();
 
 		requestAnimationFrame(update);
 	}
 };
-
 
 
 // 	document.body.addEventListener("keydown", function(event) {
