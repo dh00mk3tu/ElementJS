@@ -9,7 +9,7 @@ window.onload = function() {
 		k = 0.01 + Math.random() * .5;
 
 	weight.radius = 20;
-	weight.friction = 0.5 + Math.random() * .5;
+	weight.friction = 0.3 + Math.random() * .5;
 
 	document.body.addEventListener("mousemove", function(event) {
 		springPoint.setX(event.clientX);
