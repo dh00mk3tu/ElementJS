@@ -9,7 +9,7 @@ window.onload = function() {
 		sticks = [],
 		forms = [],
 		images = [],
-		bounce = 1.0,
+		bounce = 0.2,
 		gravity = 0.98,
 		friction = 1;
 
@@ -77,6 +77,7 @@ window.onload = function() {
 		color: "green"
 	});
 
+
 	images.push({
 		path: [
 			points[0],
@@ -98,6 +99,12 @@ window.onload = function() {
 			dy = p1.y - p0.y;
 		return Math.sqrt(dx * dx + dy * dy);
 	}
+
+	document.body.addEventListener("mousemove", function(event) {
+		// points.setX(event.clientX);
+		points.setX(event.clientX);
+		points.setY(event.clientY);
+	});
 
 	update();
 
