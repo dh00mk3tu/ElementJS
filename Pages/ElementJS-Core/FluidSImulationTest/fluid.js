@@ -310,7 +310,7 @@ thing("Yo.");
                 var dist = Math.sqrt(dx * dx + dy * dy);
                 
                 //This line generates a random value between 0 and 0.5
-                var limit = Math.random() * 0.5;
+                var limit = Math.random() * 1;
                 
                 //If the distance the particle has travelled this frame is greater than the random value...
                 if (dist > limit) {
